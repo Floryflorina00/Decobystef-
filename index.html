@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deco by Stef - Cabina Foto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background-color: #222;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .pachet {
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #111;
+        }
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        .btn {
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        img.cover-photo {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+        form {
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto 0;
+            color: #fff;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #222;
+            color: #fff;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #ddd;
+        }
+        .free-transport {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #fff;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deco by Stef - Cabina Foto</h1>
+        <p>Imortalizează cele mai frumoase momente!</p>
+    </header>
+
+    <img class="cover-photo" src="IMG-20240620-WA0046.jpg" alt="Cabina Foto Deco by Stef">
+
+    <nav>
+        <a href="#pachete">Pachete</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.facebook.com/share/16mzCoM3gP/" target="_blank">Facebook</a>
+    </nav>
+
+    <section>
+        <h2 id="pachete">Pachete și Prețuri</h2>
+
+        <div class="free-transport">
+            Transport și montaj Gratuit în București și Ilfov
+        </div>
+
+        <div class="pachet">
+            <h3>Pachet Standard - 4 ore</h3>
+            <ul>
+                <li>Fotografii NELIMITATE (10x15 cm)</li>
+                <li>Benzi magnetice NELIMITATE</li>
+                <li>Plicuri pentru fotografii NELIMITATE</li>
+                <li>Grafică personalizată pentru eveniment</li>
+                <li>Fundal textil premium</li>
+                <li>Recuzită haioasă: pălării, ochelari, propsuri etc</li>
+                <li>2 asistenți pe toată perioada evenimentului</li>
+                <li>Transfer fotografii prin WeTransfer</li>
+            </ul>
+            <strong>Preț: 1000 RON</strong>
+        </div>
+
+        <div class="pachet">
+            <h3>Pachet Premium - 6 ore</h3>
+            <ul>
+                <li>Toate beneficiile pachetului standard</li>
+                <li>GuestBook cadou 📕</li>
+            </ul>
+            <strong>Preț: 1400 RON</strong>
+        </div>
+
+        <div class="pachet">
+            <h3>Pachet Premium Plus - 8 ore</h3>
+            <ul>
+                <li>Toate beneficiile pachetului premium</li>
+                <li>Stick USB 32GB inclus</li>
+            </ul>
+            <strong>Preț: 1800 RON</strong>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📞 Telefon: 0785 918 044 / 0766 658 431</p>
+        <p>📱 WhatsApp: <a href="https://wa.me/40785918044" style="color:#fff">Trimite mesaj pe WhatsApp</a></p>
+
+        <form action="mailto:emailul.tau@example.com" method="post" enctype="text/plain">
+            <label for="nume">Nume complet:</label>
+            <input type="text" id="nume" name="Nume" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="Telefon">
+
+            <label for="mesaj">Mesaj:</label>
+            <textarea id="mesaj" name="Mesaj" rows="5" required></textarea>
+
+            <button type="submit">Trimite</button>
+        </form>
+
+        <a class="btn" href="https://www.facebook.com/share/16mzCoM3gP/" target="_blank">Vezi pe Facebook</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Deco by Stef. Toate drepturile rezervate.</p>
+    </footer>
+</body>
+</html>
